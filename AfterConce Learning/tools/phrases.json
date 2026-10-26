@@ -1,0 +1,502 @@
+[
+ {
+  "id": "w:greetings:Hallo",
+  "text": "Hallo"
+ },
+ {
+  "id": "w:greetings:Goeie môre",
+  "text": "Goeie môre"
+ },
+ {
+  "id": "w:greetings:Goeie middag",
+  "text": "Goeie middag"
+ },
+ {
+  "id": "w:greetings:Goeie naand",
+  "text": "Goeie naand"
+ },
+ {
+  "id": "w:greetings:Goeie nag",
+  "text": "Goeie nag"
+ },
+ {
+  "id": "w:greetings:Totsiens",
+  "text": "Totsiens"
+ },
+ {
+  "id": "w:greetings:Baai",
+  "text": "Baai"
+ },
+ {
+  "id": "w:greetings:Dankie",
+  "text": "Dankie"
+ },
+ {
+  "id": "w:greetings:Baie dankie",
+  "text": "Baie dankie"
+ },
+ {
+  "id": "w:greetings:Asseblief",
+  "text": "Asseblief"
+ },
+ {
+  "id": "w:greetings:Jammer",
+  "text": "Jammer"
+ },
+ {
+  "id": "w:greetings:Verskoon my",
+  "text": "Verskoon my"
+ },
+ {
+  "id": "w:greetings:Welkom",
+  "text": "Welkom"
+ },
+ {
+  "id": "w:greetings:Ja",
+  "text": "Ja"
+ },
+ {
+  "id": "w:greetings:Nee",
+  "text": "Nee"
+ },
+ {
+  "id": "w:numbers:een",
+  "text": "een"
+ },
+ {
+  "id": "w:numbers:twee",
+  "text": "twee"
+ },
+ {
+  "id": "w:numbers:drie",
+  "text": "drie"
+ },
+ {
+  "id": "w:numbers:vier",
+  "text": "vier"
+ },
+ {
+  "id": "w:numbers:vyf",
+  "text": "vyf"
+ },
+ {
+  "id": "w:numbers:ses",
+  "text": "ses"
+ },
+ {
+  "id": "w:numbers:sewe",
+  "text": "sewe"
+ },
+ {
+  "id": "w:numbers:agt",
+  "text": "agt"
+ },
+ {
+  "id": "w:numbers:nege",
+  "text": "nege"
+ },
+ {
+  "id": "w:numbers:tien",
+  "text": "tien"
+ },
+ {
+  "id": "w:numbers:twintig",
+  "text": "twintig"
+ },
+ {
+  "id": "w:numbers:dertig",
+  "text": "dertig"
+ },
+ {
+  "id": "w:numbers:honderd",
+  "text": "honderd"
+ },
+ {
+  "id": "w:numbers:duisend",
+  "text": "duisend"
+ },
+ {
+  "id": "w:family:ma",
+  "text": "ma"
+ },
+ {
+  "id": "w:family:pa",
+  "text": "pa"
+ },
+ {
+  "id": "w:family:moeder",
+  "text": "moeder"
+ },
+ {
+  "id": "w:family:vader",
+  "text": "vader"
+ },
+ {
+  "id": "w:family:broer",
+  "text": "broer"
+ },
+ {
+  "id": "w:family:suster",
+  "text": "suster"
+ },
+ {
+  "id": "w:family:seun",
+  "text": "seun"
+ },
+ {
+  "id": "w:family:dogter",
+  "text": "dogter"
+ },
+ {
+  "id": "w:family:kind",
+  "text": "kind"
+ },
+ {
+  "id": "w:family:ouma",
+  "text": "ouma"
+ },
+ {
+  "id": "w:family:oupa",
+  "text": "oupa"
+ },
+ {
+  "id": "w:family:man",
+  "text": "man"
+ },
+ {
+  "id": "w:family:vrou",
+  "text": "vrou"
+ },
+ {
+  "id": "w:family:vriend",
+  "text": "vriend"
+ },
+ {
+  "id": "w:food:kos",
+  "text": "kos"
+ },
+ {
+  "id": "w:food:water",
+  "text": "water"
+ },
+ {
+  "id": "w:food:brood",
+  "text": "brood"
+ },
+ {
+  "id": "w:food:melk",
+  "text": "melk"
+ },
+ {
+  "id": "w:food:koffie",
+  "text": "koffie"
+ },
+ {
+  "id": "w:food:tee",
+  "text": "tee"
+ },
+ {
+  "id": "w:food:bier",
+  "text": "bier"
+ },
+ {
+  "id": "w:food:wyn",
+  "text": "wyn"
+ },
+ {
+  "id": "w:food:appel",
+  "text": "appel"
+ },
+ {
+  "id": "w:food:vleis",
+  "text": "vleis"
+ },
+ {
+  "id": "w:food:vis",
+  "text": "vis"
+ },
+ {
+  "id": "w:food:hoender",
+  "text": "hoender"
+ },
+ {
+  "id": "w:food:rys",
+  "text": "rys"
+ },
+ {
+  "id": "w:food:eiers",
+  "text": "eiers"
+ },
+ {
+  "id": "w:food:kaas",
+  "text": "kaas"
+ },
+ {
+  "id": "w:travel:kar",
+  "text": "kar"
+ },
+ {
+  "id": "w:travel:bus",
+  "text": "bus"
+ },
+ {
+  "id": "w:travel:trein",
+  "text": "trein"
+ },
+ {
+  "id": "w:travel:lughawe",
+  "text": "lughawe"
+ },
+ {
+  "id": "w:travel:straat",
+  "text": "straat"
+ },
+ {
+  "id": "w:travel:stad",
+  "text": "stad"
+ },
+ {
+  "id": "w:travel:pad",
+  "text": "pad"
+ },
+ {
+  "id": "w:travel:kaartjie",
+  "text": "kaartjie"
+ },
+ {
+  "id": "w:travel:hotel",
+  "text": "hotel"
+ },
+ {
+  "id": "w:travel:kamer",
+  "text": "kamer"
+ },
+ {
+  "id": "w:travel:toilet",
+  "text": "toilet"
+ },
+ {
+  "id": "w:travel:geld",
+  "text": "geld"
+ },
+ {
+  "id": "w:travel:winkel",
+  "text": "winkel"
+ },
+ {
+  "id": "w:travel:apteek",
+  "text": "apteek"
+ },
+ {
+  "id": "w:travel:dokter",
+  "text": "dokter"
+ },
+ {
+  "id": "w:verbs:is",
+  "text": "is"
+ },
+ {
+  "id": "w:verbs:het",
+  "text": "het"
+ },
+ {
+  "id": "w:verbs:gaan",
+  "text": "gaan"
+ },
+ {
+  "id": "w:verbs:kom",
+  "text": "kom"
+ },
+ {
+  "id": "w:verbs:sien",
+  "text": "sien"
+ },
+ {
+  "id": "w:verbs:praat",
+  "text": "praat"
+ },
+ {
+  "id": "w:verbs:eet",
+  "text": "eet"
+ },
+ {
+  "id": "w:verbs:drink",
+  "text": "drink"
+ },
+ {
+  "id": "w:verbs:lees",
+  "text": "lees"
+ },
+ {
+  "id": "w:verbs:skryf",
+  "text": "skryf"
+ },
+ {
+  "id": "w:verbs:werk",
+  "text": "werk"
+ },
+ {
+  "id": "w:verbs:woon",
+  "text": "woon"
+ },
+ {
+  "id": "w:verbs:verstaan",
+  "text": "verstaan"
+ },
+ {
+  "id": "w:verbs:help",
+  "text": "help"
+ },
+ {
+  "id": "w:adjectives:groot",
+  "text": "groot"
+ },
+ {
+  "id": "w:adjectives:klein",
+  "text": "klein"
+ },
+ {
+  "id": "w:adjectives:mooi",
+  "text": "mooi"
+ },
+ {
+  "id": "w:adjectives:goed",
+  "text": "goed"
+ },
+ {
+  "id": "w:adjectives:sleg",
+  "text": "sleg"
+ },
+ {
+  "id": "w:adjectives:nuut",
+  "text": "nuut"
+ },
+ {
+  "id": "w:adjectives:oud",
+  "text": "oud"
+ },
+ {
+  "id": "w:adjectives:lekker",
+  "text": "lekker"
+ },
+ {
+  "id": "w:adjectives:rooi",
+  "text": "rooi"
+ },
+ {
+  "id": "w:adjectives:blou",
+  "text": "blou"
+ },
+ {
+  "id": "w:adjectives:groen",
+  "text": "groen"
+ },
+ {
+  "id": "w:adjectives:swart",
+  "text": "swart"
+ },
+ {
+  "id": "w:adjectives:wit",
+  "text": "wit"
+ },
+ {
+  "id": "s:Hallo! Hoe gaan dit met jou?",
+  "text": "Hallo! Hoe gaan dit met jou?"
+ },
+ {
+  "id": "s:Dit gaan goed, dankie. En jy?",
+  "text": "Dit gaan goed, dankie. En jy?"
+ },
+ {
+  "id": "s:My naam is Jan.",
+  "text": "My naam is Jan."
+ },
+ {
+  "id": "s:Wat is jou naam?",
+  "text": "Wat is jou naam?"
+ },
+ {
+  "id": "s:Waar is jy vandaan?",
+  "text": "Waar is jy vandaan?"
+ },
+ {
+  "id": "s:Ek woon in Suid-Afrika.",
+  "text": "Ek woon in Suid-Afrika."
+ },
+ {
+  "id": "s:Aangename kennis.",
+  "text": "Aangename kennis."
+ },
+ {
+  "id": "s:Praat jy Engels?",
+  "text": "Praat jy Engels?"
+ },
+ {
+  "id": "s:Ek praat net 'n bietjie Afrikaans.",
+  "text": "Ek praat net 'n bietjie Afrikaans."
+ },
+ {
+  "id": "s:Ek verstaan nie.",
+  "text": "Ek verstaan nie."
+ },
+ {
+  "id": "s:Kan jy stadig praat, asseblief?",
+  "text": "Kan jy stadig praat, asseblief?"
+ },
+ {
+  "id": "s:Hoeveel kos dit?",
+  "text": "Hoeveel kos dit?"
+ },
+ {
+  "id": "s:Ek wil dit graag hê.",
+  "text": "Ek wil dit graag hê."
+ },
+ {
+  "id": "s:Mag ek die spyskaart sien, asseblief?",
+  "text": "Mag ek die spyskaart sien, asseblief?"
+ },
+ {
+  "id": "s:Die rekening, asseblief.",
+  "text": "Die rekening, asseblief."
+ },
+ {
+  "id": "s:Dit was heerlik.",
+  "text": "Dit was heerlik."
+ },
+ {
+  "id": "s:Waar is die toilet?",
+  "text": "Waar is die toilet?"
+ },
+ {
+  "id": "s:Waar is die treinstasie?",
+  "text": "Waar is die treinstasie?"
+ },
+ {
+  "id": "s:Hoe kom ek daar?",
+  "text": "Hoe kom ek daar?"
+ },
+ {
+  "id": "s:Draai links.",
+  "text": "Draai links."
+ },
+ {
+  "id": "s:Draai regs.",
+  "text": "Draai regs."
+ },
+ {
+  "id": "s:Ek is verdwaald.",
+  "text": "Ek is verdwaald."
+ },
+ {
+  "id": "s:Ek het hulp nodig.",
+  "text": "Ek het hulp nodig."
+ },
+ {
+  "id": "s:Ek eet 'n appel.",
+  "text": "Ek eet 'n appel."
+ },
+ {
+  "id": "s:Ek drink koffie.",
+  "text": "Ek drink koffie."
+ }
+]

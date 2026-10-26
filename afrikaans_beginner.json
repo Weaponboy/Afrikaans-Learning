@@ -1,0 +1,654 @@
+{
+  "meta": {
+    "language": "Afrikaans",
+    "level": "beginner",
+    "description": "80-100 high-confidence beginner words grouped by category, plus 25 beginner sentences with English translations, plus pronunciation and grammar flashcard notes.",
+    "sources_checked": [
+      "Preply 100 Basic Afrikaans Words (2026)",
+      "Wikivoyage Afrikaans Phrasebook",
+      "AfrikaansPod101 Key Phrases / Greetings",
+      "Linguanaut Afrikaans Phrases",
+      "Elon.io Afrikaans Grammar - negation"
+    ],
+    "note": "Only high-confidence items included. Days/months are lowercase in Afrikaans."
+  },
+  "categories": [
+    {
+      "id": "greetings",
+      "name": "Greetings & Politeness",
+      "words": [
+        {
+          "af": "Hallo",
+          "en": "Hello"
+        },
+        {
+          "af": "Goeie môre",
+          "en": "Good morning"
+        },
+        {
+          "af": "Goeie middag",
+          "en": "Good afternoon"
+        },
+        {
+          "af": "Goeie naand",
+          "en": "Good evening"
+        },
+        {
+          "af": "Goeie nag",
+          "en": "Good night"
+        },
+        {
+          "af": "Totsiens",
+          "en": "Goodbye"
+        },
+        {
+          "af": "Baai",
+          "en": "Bye"
+        },
+        {
+          "af": "Dankie",
+          "en": "Thank you"
+        },
+        {
+          "af": "Baie dankie",
+          "en": "Thank you very much"
+        },
+        {
+          "af": "Asseblief",
+          "en": "Please"
+        },
+        {
+          "af": "Jammer",
+          "en": "Sorry"
+        },
+        {
+          "af": "Verskoon my",
+          "en": "Excuse me"
+        },
+        {
+          "af": "Welkom",
+          "en": "Welcome"
+        },
+        {
+          "af": "Ja",
+          "en": "Yes"
+        },
+        {
+          "af": "Nee",
+          "en": "No"
+        }
+      ]
+    },
+    {
+      "id": "numbers",
+      "name": "Numbers",
+      "words": [
+        {
+          "af": "een",
+          "en": "one"
+        },
+        {
+          "af": "twee",
+          "en": "two"
+        },
+        {
+          "af": "drie",
+          "en": "three"
+        },
+        {
+          "af": "vier",
+          "en": "four"
+        },
+        {
+          "af": "vyf",
+          "en": "five"
+        },
+        {
+          "af": "ses",
+          "en": "six"
+        },
+        {
+          "af": "sewe",
+          "en": "seven"
+        },
+        {
+          "af": "agt",
+          "en": "eight"
+        },
+        {
+          "af": "nege",
+          "en": "nine"
+        },
+        {
+          "af": "tien",
+          "en": "ten"
+        },
+        {
+          "af": "twintig",
+          "en": "twenty"
+        },
+        {
+          "af": "dertig",
+          "en": "thirty"
+        },
+        {
+          "af": "honderd",
+          "en": "hundred"
+        },
+        {
+          "af": "duisend",
+          "en": "thousand"
+        }
+      ]
+    },
+    {
+      "id": "family",
+      "name": "Family & People",
+      "words": [
+        {
+          "af": "ma",
+          "en": "mom"
+        },
+        {
+          "af": "pa",
+          "en": "dad"
+        },
+        {
+          "af": "moeder",
+          "en": "mother (formal)"
+        },
+        {
+          "af": "vader",
+          "en": "father (formal)"
+        },
+        {
+          "af": "broer",
+          "en": "brother"
+        },
+        {
+          "af": "suster",
+          "en": "sister"
+        },
+        {
+          "af": "seun",
+          "en": "son"
+        },
+        {
+          "af": "dogter",
+          "en": "daughter"
+        },
+        {
+          "af": "kind",
+          "en": "child"
+        },
+        {
+          "af": "ouma",
+          "en": "grandma"
+        },
+        {
+          "af": "oupa",
+          "en": "grandpa"
+        },
+        {
+          "af": "man",
+          "en": "man / husband"
+        },
+        {
+          "af": "vrou",
+          "en": "woman / wife"
+        },
+        {
+          "af": "vriend",
+          "en": "friend"
+        }
+      ]
+    },
+    {
+      "id": "food",
+      "name": "Food & Drink",
+      "words": [
+        {
+          "af": "kos",
+          "en": "food"
+        },
+        {
+          "af": "water",
+          "en": "water"
+        },
+        {
+          "af": "brood",
+          "en": "bread"
+        },
+        {
+          "af": "melk",
+          "en": "milk"
+        },
+        {
+          "af": "koffie",
+          "en": "coffee"
+        },
+        {
+          "af": "tee",
+          "en": "tea"
+        },
+        {
+          "af": "bier",
+          "en": "beer"
+        },
+        {
+          "af": "wyn",
+          "en": "wine"
+        },
+        {
+          "af": "appel",
+          "en": "apple"
+        },
+        {
+          "af": "vleis",
+          "en": "meat"
+        },
+        {
+          "af": "vis",
+          "en": "fish"
+        },
+        {
+          "af": "hoender",
+          "en": "chicken"
+        },
+        {
+          "af": "rys",
+          "en": "rice"
+        },
+        {
+          "af": "eiers",
+          "en": "eggs"
+        },
+        {
+          "af": "kaas",
+          "en": "cheese"
+        }
+      ]
+    },
+    {
+      "id": "travel",
+      "name": "Travel & Everyday Places",
+      "words": [
+        {
+          "af": "kar",
+          "en": "car"
+        },
+        {
+          "af": "bus",
+          "en": "bus"
+        },
+        {
+          "af": "trein",
+          "en": "train"
+        },
+        {
+          "af": "lughawe",
+          "en": "airport"
+        },
+        {
+          "af": "straat",
+          "en": "street"
+        },
+        {
+          "af": "stad",
+          "en": "city / town"
+        },
+        {
+          "af": "pad",
+          "en": "road"
+        },
+        {
+          "af": "kaartjie",
+          "en": "ticket"
+        },
+        {
+          "af": "hotel",
+          "en": "hotel"
+        },
+        {
+          "af": "kamer",
+          "en": "room"
+        },
+        {
+          "af": "toilet",
+          "en": "toilet"
+        },
+        {
+          "af": "geld",
+          "en": "money"
+        },
+        {
+          "af": "winkel",
+          "en": "shop"
+        },
+        {
+          "af": "apteek",
+          "en": "pharmacy"
+        },
+        {
+          "af": "dokter",
+          "en": "doctor"
+        }
+      ]
+    },
+    {
+      "id": "verbs",
+      "name": "Common Verbs",
+      "words": [
+        {
+          "af": "is",
+          "en": "is / are"
+        },
+        {
+          "af": "het",
+          "en": "have"
+        },
+        {
+          "af": "gaan",
+          "en": "go"
+        },
+        {
+          "af": "kom",
+          "en": "come"
+        },
+        {
+          "af": "sien",
+          "en": "see"
+        },
+        {
+          "af": "praat",
+          "en": "speak"
+        },
+        {
+          "af": "eet",
+          "en": "eat"
+        },
+        {
+          "af": "drink",
+          "en": "drink"
+        },
+        {
+          "af": "lees",
+          "en": "read"
+        },
+        {
+          "af": "skryf",
+          "en": "write"
+        },
+        {
+          "af": "werk",
+          "en": "work"
+        },
+        {
+          "af": "woon",
+          "en": "live (reside)"
+        },
+        {
+          "af": "verstaan",
+          "en": "understand"
+        },
+        {
+          "af": "help",
+          "en": "help"
+        }
+      ]
+    },
+    {
+      "id": "adjectives",
+      "name": "Adjectives & Colors",
+      "words": [
+        {
+          "af": "groot",
+          "en": "big"
+        },
+        {
+          "af": "klein",
+          "en": "small"
+        },
+        {
+          "af": "mooi",
+          "en": "beautiful / nice"
+        },
+        {
+          "af": "goed",
+          "en": "good"
+        },
+        {
+          "af": "sleg",
+          "en": "bad"
+        },
+        {
+          "af": "nuut",
+          "en": "new"
+        },
+        {
+          "af": "oud",
+          "en": "old"
+        },
+        {
+          "af": "lekker",
+          "en": "nice / tasty / pleasant"
+        },
+        {
+          "af": "rooi",
+          "en": "red"
+        },
+        {
+          "af": "blou",
+          "en": "blue"
+        },
+        {
+          "af": "groen",
+          "en": "green"
+        },
+        {
+          "af": "swart",
+          "en": "black"
+        },
+        {
+          "af": "wit",
+          "en": "white"
+        }
+      ]
+    }
+  ],
+  "sentences": [
+    {
+      "af": "Hallo! Hoe gaan dit met jou?",
+      "en": "Hello! How are you?",
+      "category": "greetings"
+    },
+    {
+      "af": "Dit gaan goed, dankie. En jy?",
+      "en": "I'm well, thank you. And you?",
+      "category": "greetings"
+    },
+    {
+      "af": "My naam is ...",
+      "en": "My name is ...",
+      "category": "introductions"
+    },
+    {
+      "af": "Wat is jou naam?",
+      "en": "What is your name?",
+      "category": "introductions"
+    },
+    {
+      "af": "Waar is jy vandaan?",
+      "en": "Where are you from?",
+      "category": "introductions"
+    },
+    {
+      "af": "Ek woon in Suid-Afrika.",
+      "en": "I live in South Africa.",
+      "category": "introductions"
+    },
+    {
+      "af": "Aangename kennis.",
+      "en": "Nice to meet you.",
+      "category": "introductions"
+    },
+    {
+      "af": "Praat jy Engels?",
+      "en": "Do you speak English?",
+      "category": "introductions"
+    },
+    {
+      "af": "Ek praat net 'n bietjie Afrikaans.",
+      "en": "I only speak a little Afrikaans.",
+      "category": "introductions"
+    },
+    {
+      "af": "Ek verstaan nie.",
+      "en": "I don't understand.",
+      "category": "help"
+    },
+    {
+      "af": "Kan jy stadig praat, asseblief?",
+      "en": "Can you speak slowly, please?",
+      "category": "help"
+    },
+    {
+      "af": "Hoeveel kos dit?",
+      "en": "How much does this cost?",
+      "category": "shopping"
+    },
+    {
+      "af": "Ek wil dit graag hê.",
+      "en": "I would like to have it.",
+      "category": "shopping"
+    },
+    {
+      "af": "Mag ek die spyskaart sien, asseblief?",
+      "en": "May I see the menu, please?",
+      "category": "shopping"
+    },
+    {
+      "af": "Die rekening, asseblief.",
+      "en": "The bill, please.",
+      "category": "shopping"
+    },
+    {
+      "af": "Dit was heerlik.",
+      "en": "It was delicious.",
+      "category": "shopping"
+    },
+    {
+      "af": "Ek is 'n vegetariër.",
+      "en": "I am a vegetarian.",
+      "category": "shopping"
+    },
+    {
+      "af": "Waar is die toilet?",
+      "en": "Where is the toilet?",
+      "category": "directions"
+    },
+    {
+      "af": "Waar is die trein-stasie?",
+      "en": "Where is the train station?",
+      "category": "directions"
+    },
+    {
+      "af": "Hoe kom ek daar?",
+      "en": "How do I get there?",
+      "category": "directions"
+    },
+    {
+      "af": "Draai links.",
+      "en": "Turn left.",
+      "category": "directions"
+    },
+    {
+      "af": "Draai regs.",
+      "en": "Turn right.",
+      "category": "directions"
+    },
+    {
+      "af": "Ek is verdwaald.",
+      "en": "I am lost.",
+      "category": "directions"
+    },
+    {
+      "af": "Ek het hulp nodig.",
+      "en": "I need help.",
+      "category": "help"
+    },
+    {
+      "af": "Ek is siek.",
+      "en": "I am sick.",
+      "category": "help"
+    }
+  ],
+  "pronunciation_notes": [
+    {
+      "title": "General rule",
+      "note": "Afrikaans is largely pronounced as spelled, using the same alphabet as English."
+    },
+    {
+      "title": "g",
+      "note": "Guttural, like Scottish 'loch' / clearing throat. Example: goed (good), gaan (go)."
+    },
+    {
+      "title": "r",
+      "note": "Rolled/trilled, unlike English. Example: rooi, môre."
+    },
+    {
+      "title": "w = v, v = f, j = y",
+      "note": "w sounds like English v (water = VAH-ter), v sounds like f (vier = fear), j sounds like y (ja = ya, jammer = YAH-mer)."
+    },
+    {
+      "title": "ie vs ei",
+      "note": "ie = long ee as in 'breed' (sien = seen). ei = like 'sale' (lei, klein = klayn)."
+    },
+    {
+      "title": "oe",
+      "note": "Like oo in 'loot' (boek = book, goed). ou = like 'coat' (oud, vrou = frow)."
+    },
+    {
+      "title": "ui",
+      "note": "No English equivalent; round lips, say between 'play' and 'house'. Example: huis (hays), uit, tuin."
+    },
+    {
+      "title": "ô / ê",
+      "note": "Circumflex changes sound: môre (morning), ê like 'apple'. Days/months lowercase: maandag, januarie."
+    }
+  ],
+  "grammar_notes": [
+    {
+      "title": "Double negative nie...nie",
+      "note": "Negation wraps the clause: nie after verb/object + nie at very end. Example: Ek praat nie Afrikaans nie (I don't speak Afrikaans). Short clauses ending in verb use one nie: Ek weet nie (I don't know)."
+    },
+    {
+      "title": "No verb conjugation",
+      "note": "Verbs don't change by subject: ek is, jy is, hy is, ons is (I am, you are, he is, we are). Same for het, gaan, kom, etc."
+    },
+    {
+      "title": "Past tense with het + ge-",
+      "note": "Past = het + verb with ge- prefix. Example: Ek het geëet (I ate / have eaten), Ek het gesien (I saw)."
+    },
+    {
+      "title": "Future with sal",
+      "note": "Future = sal + infinitive. Example: Ek sal gaan (I will go), Hy sal vlieg (He will fly)."
+    },
+    {
+      "title": "Basic word order SVO, V2 rule",
+      "note": "Basic: Ek drink water (I drink water). If sentence starts with time/place, verb stays second: Gister het ek... (Yesterday I...), not Gister ek het."
+    },
+    {
+      "title": "Formal you: u vs jy",
+      "note": "jy/jou = informal you/your. u = formal/respectful (older people, teachers, clients). Hoe gaan dit met jou? vs Hoe gaan dit met u?"
+    },
+    {
+      "title": "Indefinite article 'n",
+      "note": "'n = a/an, never capitalized even at sentence start. Example: Ek is 'n beginner (I am a beginner), 'n boek (a book)."
+    },
+    {
+      "title": "Diminutive -tjie / -jie",
+      "note": "Add -tjie/-jie for 'little': koppie (cup, from kop), tafeltjie (small table). Pronounced -kie. Very common in daily speech."
+    }
+  ]
+}
