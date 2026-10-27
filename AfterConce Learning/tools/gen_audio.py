@@ -1,16 +1,20 @@
 """Generate native Afrikaans pronunciation clips for the app.
 
 Voice: Microsoft Edge `af-ZA-AdriNeural` (female, neural), slowed -10% for learners.
-One-time generation; output MP3s are bundled in ../audio/ and work offline.
+Incremental + order-safe: filenames are content-addressed (md5 of the phrase id),
+so words/sentences can be inserted or reordered in data.js without re-mapping old
+files. Clips already generated (tracked in audio/manifest.json) are reused; only
+new phrases are downloaded. Works offline afterwards — MP3s are bundled in ../audio/.
 
 Usage:
     pip install edge-tts
     python tools/gen_audio.py                 # generate missing only
-    python tools/gen_audio.py --force         # regenerate all
+    python tools/gen_audio.py --force         # regenerate everything
     python tools/gen_audio.py --voice af-ZA-WillemNeural   # male voice instead
 """
 import argparse
 import asyncio
+import hashlib
 import json
 import sys
 from pathlib import Path
@@ -22,32 +26,46 @@ PHRASES = json.loads((HERE / "phrases.json").read_text(encoding="utf-8"))
 AUDIO_DIR = HERE.parent / "audio"
 
 
-def filename_for(index: int, pid: str) -> str:
+def filename_for(pid: str) -> str:
+    # Stable name regardless of order or inserted entries.
     prefix = "s" if pid.startswith("s:") else "w"
-    return f"{prefix}{index:04d}.mp3"
+    digest = hashlib.md5(pid.encode("utf-8")).hexdigest()[:10]
+    return f"{prefix}_{digest}.mp3"
 
 
-async def gen_one(sem, voice, rate, index, pid, text, force):
-    fname = filename_for(index, pid)
+async def gen_one(sem, voice, rate, pid, text, force, reuse):
+    fname = filename_for(pid)
     out = AUDIO_DIR / fname
-    if out.exists() and not force:
-        return (pid, fname, "skip")
-    async with sem:
-        try:
-            await edge_tts.Communicate(text, voice, rate=rate).save(str(out))
-            await asyncio.sleep(0.3)
-            return (pid, fname, "ok")
-        except Exception as e:  # noqa: BLE001
-            return (pid, fname, f"ERR {e}")
+    if not force:
+        if pid in reuse and (AUDIO_DIR / Path(reuse[pid]).name).exists():
+            return pid, reuse[pid], "skip"
+        if out.exists() and out.stat().st_size > 1000:
+            return pid, "audio/" + fname, "skip"
+    last = ""
+    for attempt in range(4):  # the service occasionally 403s bursts; back off and retry
+        async with sem:
+            try:
+                await edge_tts.Communicate(text, voice, rate=rate).save(str(out))
+                await asyncio.sleep(0.5)
+                return (pid, "audio/" + fname, "ok")
+            except Exception as e:  # noqa: BLE001
+                last = f"ERR {e}"
+                out.unlink(missing_ok=True)
+        await asyncio.sleep(2 * (attempt + 1))
+    return (pid, fname, last)
 
 
 async def main(voice, rate, force, jobs):
     AUDIO_DIR.mkdir(exist_ok=True)
+    reuse = {}
+    mf = AUDIO_DIR / "manifest.json"
+    if mf.exists():
+        try:
+            reuse = json.loads(mf.read_text(encoding="utf-8"))
+        except Exception:
+            reuse = {}
     sem = asyncio.Semaphore(jobs)
-    tasks = [
-        gen_one(sem, voice, rate, i + 1, p["id"], p["text"], force)
-        for i, p in enumerate(PHRASES)
-    ]
+    tasks = [gen_one(sem, voice, rate, p["id"], p["text"], force, reuse) for p in PHRASES]
     results = await asyncio.gather(*tasks)
     manifest = {}
     errors = 0
@@ -56,16 +74,21 @@ async def main(voice, rate, force, jobs):
             errors += 1
             print(f"FAIL {pid}: {status}")
         else:
-            manifest[pid] = "audio/" + fname
-    (AUDIO_DIR / "manifest.json").write_text(
-        json.dumps(manifest, ensure_ascii=False, indent=1), encoding="utf-8"
-    )
+            manifest[pid] = fname
+    mf.write_text(json.dumps(manifest, ensure_ascii=False, indent=1), encoding="utf-8")
     # JS manifest inlined via <script> (file:// blocks fetch, so no runtime fetch)
     js = "const AUDIO_FILES = " + json.dumps(manifest, ensure_ascii=False) + ";\n"
     (HERE.parent / "audio-manifest.js").write_text(js, encoding="utf-8")
+    # Cleanup: remove orphaned clips no longer referenced by the manifest.
+    keep = {Path(v).name for v in manifest.values()}
+    removed = 0
+    for f in AUDIO_DIR.glob("*.mp3"):
+        if f.name not in keep:
+            f.unlink()
+            removed += 1
     ok = sum(1 for r in results if r[2] == "ok")
     skipped = sum(1 for r in results if r[2] == "skip")
-    print(f"done: {ok} generated, {skipped} skipped, {errors} failed, {len(manifest)} in manifest")
+    print(f"done: {ok} generated, {skipped} reused/skipped, {errors} failed, {len(manifest)} in manifest, {removed} orphans removed")
     return 1 if errors else 0
 
 
