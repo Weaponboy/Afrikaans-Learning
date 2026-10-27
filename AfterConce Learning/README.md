@@ -28,7 +28,7 @@ Every answer auto-saves to the browser (`localStorage` key `afrikaansLeerV1`): X
 
 ## Adding content (optional)
 1. Edit `data.js` (add words/sentences — keep existing entries intact so progress keeps matching).
-2. `node tools/build_phrases.js` — rebuilds `tools/phrases.json` from `data.js`.
+2. `node tools/build_phrases.js` — rebuilds `tools/phrases.json` from `data.js`, and bumps the `?v=` version in `index.html` so browsers refetch changed files after you redeploy.
 3. `python tools/gen_audio.py` — generates clips for the new entries only (existing clips are reused; filenames are content-addressed, so reordering/inserting entries is safe).
 
 ## Regenerating audio (optional)

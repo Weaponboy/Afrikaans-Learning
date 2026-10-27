@@ -4,7 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Afrikaans Leer — Free Local Flashcards</title>
-<link rel="stylesheet" href="styles.css">
+<!-- Bump the ?v= number when data.js/app.js/styles.css/audio-manifest.js change so browsers refetch them. (tools/build_phrases.js does this automatically.) -->
+<link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
 <header>
@@ -22,8 +23,8 @@
   <div id="view-study" style="display:none"></div>
 </main>
 <footer>Progress auto-saves in this browser (localStorage) — no account, works offline. Native Afrikaans audio clips included. Press <span class="kbd">Space</span> to flip, <span class="kbd">1</span>/<span class="kbd">2</span>/<span class="kbd">3</span> to grade.</footer>
-<script src="data.js"></script>
-<script src="audio-manifest.js"></script>
-<script src="app.js"></script>
+<script src="data.js?v=4"></script>
+<script src="audio-manifest.js?v=4"></script>
+<script src="app.js?v=4"></script>
 </body>
 </html>
